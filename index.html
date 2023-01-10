@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="HinyApp is a psychosocial mobile and web-based application suited for everyone who wants to assess their psychological needs, maintain a good well-being, and attain their psychiatric needs easily.">
 	<title>Hinyapp</title>
 	<link rel="icon" type="img/png" href="img/dolphin-logo.png">
-
 	<style>
 		
 		body {
@@ -54,7 +54,7 @@
 		}
 
 		.main-content {
-			height: 100%;
+			height: 110vh;
 			width: 100%;
 			display: block;
 			overflow: hidden;
@@ -64,8 +64,9 @@
 			width: 367px;
 			height: 367px;
 			position: absolute;
-			top: 35vh;
+			top: 25vh;
 			left: 10vw;
+			border-radius: 10%;
 		}
 
 		.background-image-container {
@@ -82,12 +83,73 @@
 			width: 100%;
 		}
 
-		.text01-container {
+		.text-1 {
+			width: 621px;
+			height: 107px;
+			position: absolute;
+			left: 656px;
+			top: 75px;
+			font-size: 86px;
+			text-align: center;
+			color: white;
+		}
 
+		.text-2 {
+			width: 444px;
+			position: relative;
+			left: 89px;
+			bottom: 250px;
+			text-align: center;
+			color: white;
+			font-size: 1.5rem;
+			line-height: 2.5rem;
+		}
+
+		.download {
+			width: 30vw;
+			height: 10vh;
+			position: absolute;
+			right: 15vw;
+			top: 75vh;
+			color: black;
+			background-color: #d9d9d9;
+			display: flex;
+			justify-content: center;
+			border-radius: 15px;
+		}
+
+		.download p {
+			font-size: 20px;
+		}
+
+		.platform-container {
+			width: 40vw;
+			height: 20vw;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: stretch;
+			align-content: space-around;
+			justify-items: center;
+			text-align: center;
+			position: absolute;
+			right: 5vw;
+			top: 80vh;
+		}
+
+		.platform {
+			width: 11.5vw;
+			position: relative;
+		}
+
+		.platform img {
+			width: 100%;
+		}
+
+		.platform img:hover {
+			transform: scale(1.1);
 		}
 
 	</style>
-
 </head>
 <body>
 	
@@ -103,8 +165,17 @@
 <div class="main-content">
 	<div class="background-image-container"></div>
 	<div class="dolphin-logo-container"><img src="img/dolphin-logo.png" alt="Dolphin Logo" class="dolphin-logo"></div>
-	<p class="text01">Don't let your struggle become your identity</p>
-	<p class="text02">Hinyapp is a psychosocial mobile and web-based application suited for everyone who wants to assess their psychological needs, maintain a good well-being, and attain their psychiatric needs easily</p>
+	<p class="text-1">Don't let your struggle become your identity</p>
+	<p class="text-2">Hinyapp is a psychosocial mobile and web-based application suited for everyone who wants to assess their psychological needs, maintain a good well-being, and attain their psychiatric needs easily.</p>
+
+	<div class="download"><p>Download the App:</p></div>
+
+	<div class="platform-container">
+		<div class="platform"><img src="img/android-logo.png" alt="Android Logo">Android</div>
+		<div class="platform"><img src="img/apple-logo.png" alt="IOS Logo">IOS</div>
+		<div class="platform"><img src="img/browser.png" alt="Browser Logo">Or open it on browser</div>
+	</div>
+
 </div>
 
 <div class="features">
