@@ -1,409 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hinyapp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hinyapp</title>
+	<link rel="icon" type="img/png" href="img/dolphin-logo.png">
 
-  <script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		
+		body {
+			margin: 0;
+		}
+		
+		ul.header {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			top: 0;
+			background-color: white;
+			height: 13.5vh;
+			width: 100%;
+			z-index: 4;
+		}
+
+		li.header-list {
+			float: right;
+		}
+
+		li.header-list a {
+			display: block;
+			margin: auto;
+			color: black;
+			text-align: center;
+			text-decoration: none;
+			padding: 28px 42px;	
+		}
+
+		li.header-list:first-child a {
+			padding: 30px;
+		}
+
+		.logo-container {
+			text-align: left;
+			padding: 5px;
+			height: 10vh;
+			width: 225px;
+			z-index: 3;
+			position: absolute;
+
+		}
+		.hinyapp-logo {
+			height: 80%;
+		}
+
+		.main-content {
+			height: 100%;
+			width: 100%;
+			display: block;
+			overflow: hidden;
+		}
+
+		.dolphin-logo {
+			width: 367px;
+			height: 367px;
+			position: absolute;
+			top: 35vh;
+			left: 10vw;
+		}
+
+		.background-image-container {
+			width: 100%;
+			height: 110vh;
+			overflow: hidden;
+			background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/Samsung-Galaxy-S20-FE-4G-Unlocked-Home-Screen.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.features {
+			height: 100vh;
+			width: 100%;
+		}
+
+		.text01-container {
+
+		}
+
+	</style>
 
 </head>
 <body>
+	
+	<ul class="header">
+		<li class="logo-container"><img src="img/hinyapp-logo.png" style="height: inherit;" alt="Hinyapp Logo" class="hinyapp-logo"></li>
+		<li class="header-list"><a href="javascript:void();">Login</a></li>
+		<li class="header-list"><a href="javascript:void();">About Us</a></li>
+		<li class="header-list"><a href="javascript:void();">Subscription</a></li>
+		<li class="header-list"><a href="javascript:void();">Features</a></li>
+		<li class="header-list"><a href="javascript:void();">Download The App</a></li>
+	</ul>
 
-<div class="w-[1440px] h-[3886px] relative overflow-hidden border border-black">
-  <div class="w-[1440px] h-[318px] absolute left-0 top-[3568px] overflow-hidden bg-[#5e4ec0]">
-    <div class="w-[283px] h-[153px]">
-      <p class="absolute left-[1068px] top-[74px] text-4xl text-left text-white">Working Hours</p>
-      <p class="absolute left-[1068px] top-[131px] text-base text-left text-white">
-        <span class="text-base text-left text-white">Monday - Friday: 8:00 AM - 8:00 PM</span
-        ><br><span class="text-base text-left text-white">Saturday: 10:00 AM - 7:00 PM</span
-        ><br><span class="text-base text-left text-white">Sunday: Closed</span>
-      </p>
-    </div>
-    <div class="w-[294px] h-[166px]">
-      <p class="absolute left-[83px] top-[57px] text-[64px] text-left text-white">Find Us At</p>
-      <p class="absolute left-[83px] top-[130px] text-2xl text-left text-white">
-        Marinduque, Philippines
-      </p>
-      <div class="flex justify-start items-start absolute left-[93px] top-[180px] gap-[30px]">
-        <svg
-          width="45"
-          height="43"
-          viewBox="0 0 45 43"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M45 30.1538C45 37.8888 40.1175 42.5 31.9275 42.5H29.25C28.0125 42.5 27 41.5438 27 40.375V28.1137C27 27.54 27.495 27.0512 28.1025 27.0512L32.0625 26.9875C32.3775 26.9662 32.6475 26.7537 32.715 26.4562L33.5025 22.3975C33.5178 22.3055 33.5118 22.2115 33.4849 22.1219C33.458 22.0323 33.4108 21.9493 33.3466 21.8786C33.2825 21.8079 33.2028 21.7512 33.1132 21.7124C33.0236 21.6735 32.9261 21.6535 32.8275 21.6537L28.035 21.7175C27.405 21.7175 26.91 21.25 26.8875 20.6762L26.7975 15.47C26.7975 15.13 27.09 14.8325 27.4725 14.8325L32.8725 14.7475C33.255 14.7475 33.5475 14.4713 33.5475 14.11L33.4575 9.01C33.4575 8.64875 33.165 8.3725 32.7825 8.3725L26.7075 8.4575C25.8207 8.47022 24.9453 8.6481 24.1314 8.98094C23.3175 9.31377 22.5811 9.79502 21.9645 10.3971C21.3479 10.9992 20.8632 11.7103 20.5381 12.4896C20.213 13.269 20.0539 14.1012 20.07 14.9387L20.1825 20.7825C20.205 21.3775 19.71 21.845 19.08 21.8662L16.38 21.9088C15.9975 21.9088 15.705 22.185 15.705 22.5462L15.7725 26.5838C15.7725 26.945 16.065 27.2213 16.4475 27.2213L19.1475 27.1787C19.7775 27.1787 20.2725 27.6462 20.295 28.22L20.4975 40.3325C20.52 41.5225 19.5075 42.5 18.2475 42.5H13.0725C4.8825 42.5 0 37.8888 0 30.1325V12.3462C0 4.61125 4.8825 0 13.0725 0H31.9275C40.1175 0 45 4.61125 45 12.3462V30.1538Z"
-            fill="white"
-          ></path></svg
-        ><svg
-          width="43"
-          height="43"
-          viewBox="0 0 43 43"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="flex-grow-0 flex-shrink-0"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M30.5237 0H12.4977C4.66783 0 0 4.6655 0 12.4915V30.487C0 38.3345 4.66783 43 12.4977 43H30.5022C38.3321 43 42.9999 38.3345 42.9999 30.5085V12.4915C43.0214 4.6655 38.3536 0 30.5237 0ZM21.5107 29.842C16.9074 29.842 13.1646 26.101 13.1646 21.5C13.1646 16.899 16.9074 13.158 21.5107 13.158C26.114 13.158 29.8569 16.899 29.8569 21.5C29.8569 26.101 26.114 29.842 21.5107 29.842V29.842ZM34.2451 10.492C34.1375 10.75 33.9869 10.9865 33.7933 11.2015C33.5782 11.395 33.3416 11.5455 33.0835 11.653C32.692 11.8191 32.2599 11.8648 31.8423 11.7844C31.4247 11.704 31.0405 11.5011 30.7388 11.2015C30.5452 10.9865 30.3946 10.75 30.2871 10.492C30.1766 10.2336 30.1181 9.95599 30.115 9.675C30.115 9.3955 30.1795 9.116 30.2871 8.858C30.3946 8.5785 30.5452 8.3635 30.7388 8.1485C31.2336 7.654 31.9864 7.4175 32.6748 7.568C32.8254 7.5895 32.9544 7.6325 33.0835 7.697C33.2125 7.74 33.3416 7.8045 33.4707 7.8905C33.5782 7.955 33.6858 8.0625 33.7933 8.1485C33.9869 8.3635 34.1375 8.5785 34.2451 8.858C34.3526 9.116 34.4171 9.3955 34.4171 9.675C34.4171 9.9545 34.3526 10.234 34.2451 10.492V10.492Z"
-            fill="white"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div class="w-[1440px] h-[496px] absolute left-0 top-[3072px] overflow-hidden bg-white">
-    <p class="absolute left-[590px] top-[76px] text-[64px] text-left text-black">About Us</p>
-    <p class="w-[629px] h-[104px] absolute left-[405px] top-[221px] text-xl text-center text-black">
-      Our team of physiotherapists is made up of highly trained professionals who have experience in
-      many different clinical settings including, orthopaedic, acute care, neurology, sports
-      medicine, and more. Our team of physiotherapists are trained to assess, treat and recover from
-      a wide variety of injuries and conditions. We are a highly trained team, and your healthcare
-      needs will be taken care of with the latest research in the field.
-    </p>
-    <p class="w-[629px] h-[104px] absolute left-[396px] top-[344px] text-xl text-center text-black">
-      <span class="w-[629px] h-[104px] text-xl font-bold text-center text-black">Address:</span
-      ><span class="w-[629px] h-[104px] text-xl text-center text-black">
-        Marinduque, Philippines</span
-      ><br /><span class="w-[629px] h-[104px] text-xl font-bold text-center text-black">Phone:</span
-      ><span class="w-[629px] h-[104px] text-xl text-center text-black"> +63 09999999</span
-      ><br /><span class="w-[629px] h-[104px] text-xl font-bold text-center text-black">Email:</span
-      ><span class="w-[629px] h-[104px] text-xl text-center text-black"> info@hinyap.com</span>
-    </p>
-  </div>
-  <div class="w-[1440px] h-[1024px] absolute left-0 top-[2048px] overflow-hidden bg-[#5e4ec0]">
-    <div class="w-[1440px] h-[1024px]">
-      <div class="w-[1440px] h-[1024px]">
-        <svg
-          width="1440"
-          height="1024"
-          viewBox="0 0 1440 1024"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="absolute left-[-0.5px] top-[-0.5px]"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0 30C0 13.4315 13.4315 0 30 0H1410C1426.57 0 1440 13.4315 1440 30V994C1440 1010.57 1426.57 1024 1410 1024H30C13.4314 1024 0 1010.57 0 994V30Z"
-            fill="#9D8DFF"
-          ></path>
-        </svg>
-        <div class="w-[1264px] h-[292px]">
-          <div
-            class="w-[1264px] h-[292px] absolute left-[62.5px] top-[60.5px] rounded-[25px] bg-[#7b61ff]"
-          ></div>
-          <div class="w-[982px] h-[225px]">
-            <p class="absolute left-[206px] top-[90px] text-5xl text-left text-white">
-              Hiny Help Kits
-            </p>
-            <p
-              class="w-[560px] h-[104px] absolute left-[206px] top-[211px] text-xl text-left text-white"
-            >
-              HinyKits is a package of features for HinyApp that provides more insights and feedback
-              on your psychosocial health, resources for additional support, and recommendations,
-              e-books and audiobooks to help you cope and improve your overall health, comprehensive
-              meditation sessions and lifestyle plans to relax and relieve stress, and much more!
-            </p>
-            <p class="absolute left-[929px] top-[152px] text-2xl text-left text-white">
-              <span class="text-2xl italic text-left text-white">Fee Starts at</span
-              ><span class="text-2xl font-bold italic text-left text-white"> ₱129.00</span>
-            </p>
-          </div>
-          <div class="w-[268px] h-[74px]">
-            <div
-              class="w-[268px] h-[74px] absolute left-[924.5px] top-[200.5px] rounded-[25px] bg-[#ffcd1e]"
-            ></div>
-            <p class="absolute left-[959px] top-[213px] text-[40px] text-left text-white">
-              Learn More
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="w-[1440px] h-[1024px] absolute left-0 top-[1024px] bg-[#5e4ec0]">
-    <div class="w-[1424px] h-[1012px]">
-      <div class="w-[700px] h-[438px]">
-        <div class="w-[657px] h-[372px] absolute left-[33px] top-[161px] overflow-hidden"></div>
-        <div class="w-[287px] h-[234px]">
-          <p class="absolute left-[37px] top-[169px] text-5xl text-center text-white">HinyList</p>
-          <p
-            class="w-[287px] h-[174px] absolute left-[37px] top-[229px] text-base text-center text-white"
-          >
-            Have difficulties with school, work or productivity? Hinylists is an easy-to-use task
-            tracker and organizer.
-          </p>
-        </div>
-        <div class="w-48 h-[369.9px]">
-          <div
-            class="w-48 h-[369.9px] absolute left-[435.5px] top-[160.5px] rounded-[25px] bg-[#9d8dff]"
-          ></div>
-          <img
-            src="img\info-page.jpg"
-            class="w-[162.71px] h-[349.29px] absolute left-[449.6px] top-[168.09px] rounded-[25px] object-cover"
-          />
-        </div>
-        <img
-          src="img\hinylists.png"
-          class="w-[386px] h-[386px] absolute left-[-10.5px] top-[212.5px] object-cover"
-        />
-      </div>
-      <div class="w-[657px] h-[405.22px]">
-        <div class="w-[657px] h-[372px] absolute left-[757px] top-[157px] overflow-hidden"></div>
-        <div class="w-[207px] h-[234px]">
-          <p class="absolute left-[761px] top-[165px] text-5xl text-center text-white">HinyFacts</p>
-          <p
-            class="w-[167px] h-[174px] absolute left-[761px] top-[225px] text-base text-left text-white"
-          >
-            Lightheartedly learn about your skills, environment, and self. These therapist-reviewed
-            and research-backed learning packets can help with various life challenges.
-          </p>
-        </div>
-        <div class="w-48 h-[369.9px]">
-          <div
-            class="w-48 h-[369.9px] absolute left-[1159.5px] top-[156.5px] rounded-[25px] bg-[#a9e0ff]"
-          ></div>
-          <img
-            src="img\hinyfacts.jpg"
-            class="w-[162.71px] h-[349.29px] absolute left-[1173.6px] top-[164.09px] rounded-[25px] object-cover"
-          />
-        </div>
-        <img
-          src="img\hinyfacts.png"
-          class="w-[310px] h-[307.22px] absolute left-[884.5px] top-[254.5px] object-cover"
-        />
-      </div>
-      <div class="w-[657px] h-[427px]">
-        <div class="w-[657px] h-[372px] absolute left-[37px] top-[599px] overflow-hidden"></div>
-        <div class="w-[313px] h-[234px]">
-          <p class="absolute left-[41px] top-[607px] text-5xl text-center text-white">HinyTalks</p>
-          <p
-            class="w-[313px] h-[174px] absolute left-[41px] top-[667px] text-base text-left text-white"
-          >
-            Secure, end-to-end encrypted texting allows you to connect, communicate, and receive
-            calls with friends or individuals, and freely listen to counselors.
-          </p>
-        </div>
-        <div class="w-48 h-[369.9px]">
-          <div
-            class="w-48 h-[369.9px] absolute left-[439.5px] top-[598.5px] rounded-[25px] bg-[#ecc2ff]/[0.87]"
-          ></div>
-          <img
-            src="img\hinytalks.jpg"
-            class="w-[162.71px] h-[349.29px] absolute left-[453.6px] top-[606.09px] rounded-[25px] object-cover"
-          />
-        </div>
-        <img
-          src="img\hinyadolphin.png"
-          class="w-[336px] h-[323px] absolute left-[117.5px] top-[702.5px] object-cover"
-        />
-      </div>
-      <div class="w-[729px] h-[617px]">
-        <div class="w-[657px] h-[372px] absolute left-[757px] top-[595px] overflow-hidden"></div>
-        <div class="w-[317px] h-[234px]">
-          <p class="absolute left-[757px] top-[603px] text-5xl text-center text-white">
-            HinyFriends
-          </p>
-          <p
-            class="w-[313px] h-[174px] absolute left-[761px] top-[663px] text-base text-left text-white"
-          >
-            Share thoughts and feelings, play with hinya's features, and become friends with peers.
-          </p>
-        </div>
-        <div class="w-48 h-[369.9px]">
-          <div
-            class="w-48 h-[369.9px] absolute left-[1159.5px] top-[594.5px] rounded-[25px] bg-[#ffcd1e]"
-          ></div>
-          <img
-            src="img\hinyfriends.jpg"
-            class="w-[162.71px] h-[349.29px] absolute left-[1173.6px] top-[602.09px] rounded-[25px] object-cover"
-          />
-        </div>
-        <img
-          src="img\hinyfriends.png"
-          class="w-[642px] h-[617px] absolute left-[684.5px] top-[551.5px] object-cover"
-        />
-      </div>
-    </div>
-    <p class="absolute left-[596px] top-[54px] text-[64px] text-center text-white">Features</p>
-  </div>
-  <div class="w-[1440px] h-[1024px] absolute left-0 top-0 overflow-hidden">
-    <div class="w-[1722px] h-[1024px]">
-      <img
-        src="img\Samsung-Galaxy-S20-FE-4G-Unlocked-Home-Screen.jpg"
-        class="w-[1722px] h-[969px] absolute left-[-129.5px] top-[54.5px] object-cover"
-      /><svg
-        width="1440"
-        height="1024"
-        viewBox="0 0 1440 1024"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="absolute left-[-0.5px] top-[-0.5px]"
-        preserveAspectRatio="none"
-      >
-        <path d="M0 0H1440V1024H0V0Z" fill="black" fill-opacity="0.4"></path>
-      </svg>
-    </div>
-    <div class="w-[1240px] h-[559px]">
-      <p
-        class="w-[621px] h-[107px] absolute left-[656px] top-[291px] text-[86px] text-center text-white"
-      >
-        Don’t let your struggle become your identity
-      </p>
-      <p class="w-[444px] absolute left-[37px] top-[660px] text-center text-white">
-        <span class="w-[444px] text-2xl text-center text-white">
-          Hinyapp is a psychosocial mobile and web-based application suited for everyone who wants
-          to assess their psychological needs, maintain a good well-being, and attain their
-          psychiatric needs easily</span
-        ><span class="w-[444px] text-base text-center text-white">. </span>
-      </p>
-      <img
-        src="img\dolphin-logo.png"
-        class="w-[367px] h-[367px] absolute left-[115.5px] top-[262.5px] rounded-[25px] object-cover"
-      />
-    </div>
-    <div class="w-[835px] h-[342px]">
-      <div class="w-[835px] h-[342px] absolute left-[546px] top-[612px]"></div>
-      <div class="w-[231px] h-[239px]">
-        <div
-          class="w-[231px] h-[239px] absolute left-[545.5px] top-[714.5px] rounded-[5px] bg-[#e9eff2]"
-        ></div>
-        <div class="w-44 h-[31px]">
-          <svg
-            width="176"
-            height="31"
-            viewBox="0 0 176 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="absolute left-[568.5px] top-[895.5px]"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0 10C0 4.47715 4.47715 0 10 0H166C171.523 0 176 4.47715 176 10V21C176 26.5228 171.523 31 166 31H10C4.47715 31 0 26.5228 0 21V10Z"
-              fill="#7B61FF"
-            ></path>
-          </svg>
-          <p
-            class="w-[150px] h-[26px] absolute left-[582px] top-[901px] text-xl text-center text-white"
-          >
-            Android
-          </p>
-        </div>
-        <div class="w-[116px] h-[126px]">
-          <img
-            src="img\android-logo.png"
-            class="w-[116px] h-[126px] absolute left-[598.5px] top-[746.5px] object-cover"
-          />
-          <div class="w-[126px] h-[127px] absolute left-[595.5px] top-[745.5px] bg-[#7b61ff]"></div>
-        </div>
-      </div>
-      <div class="w-[231px] h-[239px]">
-        <div
-          class="w-[231px] h-[239px] absolute left-[847.5px] top-[714.5px] rounded-[5px] bg-[#e9eff2]"
-        ></div>
-        <div class="w-44 h-[31px]">
-          <svg
-            width="176"
-            height="31"
-            viewBox="0 0 176 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="absolute left-[873.5px] top-[895.5px]"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0 10C0 4.47715 4.47715 0 10 0H166C171.523 0 176 4.47715 176 10V21C176 26.5228 171.523 31 166 31H10C4.47715 31 0 26.5228 0 21V10Z"
-              fill="#7B61FF"
-            ></path>
-          </svg>
-          <p
-            class="w-[150px] h-[26px] absolute left-[887px] top-[901px] text-xl text-center text-white"
-          >
-            IOS
-          </p>
-        </div>
-        <div class="w-[106px] h-[110px]">
-          <img
-            src="img\apple-logo.png"
-            class="w-[106px] h-[110px] absolute left-[910.5px] top-[755.5px] object-cover"
-          />
-          <div class="w-[126px] h-[127px] absolute left-[898.5px] top-[747.5px] bg-[#7b61ff]"></div>
-        </div>
-      </div>
-      <div class="w-[231px] h-[239px]">
-        <div class="w-[231px] h-[239px]">
-          <div
-            class="w-[231px] h-[239px] absolute left-[1149.5px] top-[714.5px] rounded-[5px] bg-[#e9eff2]"
-          ></div>
-          <p
-            class="w-[154px] h-[53px] absolute left-[1187px] top-[896px] text-xl text-center text-black"
-          >
-            OR TRY IT ON BROWSER...
-          </p>
-        </div>
-        <div class="w-[110px] h-[110px]">
-          <img
-            src="img/browser.png"
-            class="w-[110px] h-[110px] absolute left-[1210.5px] top-[755.5px] object-cover"
-          />
-          <div
-            class="w-[126px] h-[127px] absolute left-[1200.5px] top-[747.5px] bg-[#7b61ff]"
-          ></div>
-        </div>
-      </div>
-      <div class="w-[353px] h-16">
-        <div
-          class="w-[353px] h-16 absolute left-[786.5px] top-[611.5px] rounded-[5px] bg-[#e9eff2]"
-        ></div>
-        <p class="absolute left-[877px] top-[633px] text-xl text-center text-black">
-          Download the App
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="w-[1440px] h-[86px] absolute left-0 top-0">
-    <svg
-      width="1440"
-      height="86"
-      viewBox="0 0 1440 86"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="absolute left-[-1px] top-[-1px]"
-      preserveAspectRatio="none"
-    >
-      <path d="M0 0H1440V86H0V0Z" fill="white"></path></svg
-    ><img
-      src="img\hinyapp-logo.png"
-      class="w-[168.5px] h-[50px] absolute left-[17px] top-[17px] object-cover"
-    />
-    <div
-      class="flex flex-row-reverse justify-center items-center absolute left-[384.5px] top-8 gap-10 px-[35px]"
-    >
-      <p class="flex-grow-0 flex-shrink-0 text-xs text-center text-black">About Us</p>
-      <p class="flex-grow-0 flex-shrink-0 w-[89px] h-2 text-xs text-center text-black">
-        Subscription
-      </p>
-      <p class="flex-grow-0 flex-shrink-0 w-[124px] text-xs text-center text-black">Features</p>
-      <p class="flex-grow-0 flex-shrink-0 w-[124px] h-[23px] text-xs text-center text-black">
-        <span class="flex-grow-0 flex-shrink-0 w-[124px] h-[23px] text-xs text-center text-black"
-          >Download</span
-        ><br /><span
-          class="flex-grow-0 flex-shrink-0 w-[124px] h-[23px] text-xs text-center text-black"
-          >The App</span
-        >
-      </p>
-    </div>
-    <div class="w-[142px] h-[52px]">
-      <div
-        class="w-[142px] h-[52px] absolute left-[1205.5px] top-[16.5px] rounded-[36px] bg-[#d9d9d9]"
-      ></div>
-      <p class="absolute left-[1248px] top-[31px] text-xl text-center text-black">LOGIN</p>
-    </div>
-  </div>
+<div class="main-content">
+	<div class="background-image-container"></div>
+	<div class="dolphin-logo-container"><img src="img/dolphin-logo.png" alt="Dolphin Logo" class="dolphin-logo"></div>
+	<p class="text01">Don't let your struggle become your identity</p>
+	<p class="text02">Hinyapp is a psychosocial mobile and web-based application suited for everyone who wants to assess their psychological needs, maintain a good well-being, and attain their psychiatric needs easily</p>
+</div>
+
+<div class="features">
+	
 </div>
 
 </body>
