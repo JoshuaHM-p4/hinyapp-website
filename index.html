@@ -25,30 +25,46 @@
 
 		li.header-list {
 			float: right;
+			padding: 10px;
 		}
 
 		li.header-list a {
 			display: block;
-			margin: auto;
 			color: black;
 			text-align: center;
 			text-decoration: none;
-			padding: 28px 42px;	
+			padding: 24px 34px;	
 		}
 
-		li.header-list:first-child a {
-			padding: 30px;
+		li.header-list.middle-btn:hover {
+			background-color: #9747ff;
 		}
+
+		li.header-list.middle-btn:hover > a {
+			color: #ffcd1e;
+		}
+
 
 		.logo-container {
 			text-align: left;
-			padding: 5px;
-			height: 10vh;
+			padding: 20px;
+			height: 8vh;
 			width: 225px;
 			z-index: 3;
 			position: absolute;
 
 		}
+		.login {
+			margin-left: 15vw;
+		}
+
+
+
+		.login a {
+			background-color: #d9d9d9;
+			border-radius: 25px;
+		}
+
 		.hinyapp-logo {
 			height: 80%;
 		}
@@ -76,11 +92,6 @@
 			background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/Samsung-Galaxy-S20-FE-4G-Unlocked-Home-Screen.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
-		}
-
-		.features {
-			height: 100vh;
-			width: 100%;
 		}
 
 		.text-1 {
@@ -149,17 +160,33 @@
 			transform: scale(1.1);
 		}
 
+		.features {
+			height: 100vh;
+			width: 100%;
+			background-color: #5e4ec0;
+		}
+
+		#features {
+			margin: 0;
+			color: white;
+			font-size: 4em;
+			position: relative;
+			top: 2.5vh;
+			text-align: center;
+		}
+
+
 	</style>
 </head>
 <body>
 	
 	<ul class="header">
 		<li class="logo-container"><img src="img/hinyapp-logo.png" style="height: inherit;" alt="Hinyapp Logo" class="hinyapp-logo"></li>
-		<li class="header-list"><a href="javascript:void();">Login</a></li>
-		<li class="header-list"><a href="javascript:void();">About Us</a></li>
-		<li class="header-list"><a href="javascript:void();">Subscription</a></li>
-		<li class="header-list"><a href="javascript:void();">Features</a></li>
-		<li class="header-list"><a href="javascript:void();">Download The App</a></li>
+		<li class="header-list"><div class="login"><a class="" href="javascript:void();">Login</a></div></li>
+		<li class="header-list middle-btn"><a href="javascript:void();">About Us</a></li>
+		<li class="header-list middle-btn"><a href="javascript:void();">Subscription</a></li>
+		<li class="header-list middle-btn"><a href="#features">Features</a></li>
+		<li class="header-list middle-btn"><a href="#download">Download The App</a></li>
 	</ul>
 
 <div class="main-content">
@@ -168,7 +195,7 @@
 	<p class="text-1">Don't let your struggle become your identity</p>
 	<p class="text-2">Hinyapp is a psychosocial mobile and web-based application suited for everyone who wants to assess their psychological needs, maintain a good well-being, and attain their psychiatric needs easily.</p>
 
-	<div class="download"><p>Download the App:</p></div>
+	<div class="download" id="download"><p>Download the App:</p></div>
 
 	<div class="platform-container">
 		<div class="platform"><img src="img/android-logo.png" alt="Android Logo">Android</div>
@@ -179,7 +206,60 @@
 </div>
 
 <div class="features">
-	
+	<p id="features">Features</p>
+	<div class="hinyfeatures">
+		<div class="hinyist">
+			<p>HinyList</p>
+			<p>Have difficulties with school, work, or productivity? Hinylists is an easy-to-use task tracker and organizer.</p>
+		</div>
+		<div class="hinyfacts">
+			<p>HinyFacts</p>
+			<p>Lightheartedly learn about your skills, environment, and self. These therapist-reviewed and research backed-learning packets can help with various life challenges.</p>
+		</div>
+		<div class="hinytalks">
+			<p>HinyTalks</p>
+			<p>Secure, end-to-end encrypted texting allows you to connect, communicate, and receive calls with friends, individuals, and freely listen to counselors.</p>
+		</div>
+		<div class="hinyfriends">
+			<p>HinyFriends</p>
+			<p>Share thoughts and feelings, play with Hinya's features, and become friends with peers.</p>
+		</div>
+	</div>
+</div>
+
+<div class="hinyhelpkits">
+	<div class="hinyhelpkits-container">
+		<p id="hinyhelpkits">Hiny Help Kits</p>
+		<p>HinyKits is a package of features for HinyApp that provides more insights and feedback on your psychosocial health, resources for additional support, and recommendations, e-books and audiobooks to help you cope and improve your overall health, comprehensive meditation sessions and lifestyle plans to relax and relieve stress, and much more!</p>
+		<p>Fee starts at ₱129.00</p>
+		<p>Learn More</p>
+	</div>
+</div>
+
+<div class="aboutus">
+	<div class="aboutus-container">
+		<p id="aboutus">About Us</p>
+		<p>Our team of physiotherapists is made up of highly trained professionals who have experience in many different clinical settings including, orthopaedic, acute care, neurology, sports medicine, and more. Our team of physiotherapists are trained to assess, treat and recover from a wide variety of injuries and conditions. We are a highly trained team, and your healthcare needs will be taken care of with the latest research in the field.</p>
+		<p>Address: Marinduque, Philippines</p>
+		<p>Phone: +63 0999999999</p>
+		<p>Email: info@hinyap.com</p>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="findus">
+		<p>Find Us At</p>
+		<p>Marinduque, Philippines</p>
+		<div class="social-icons">
+			
+		</div>
+	</div>
+	<div class="working-hours">
+		<p>Working Hours</p>
+		<p>Monday - Friday: 8:00AM - 8:00PM</p>
+		<p>Saturday: 10:00AM - 7:00PM</p>
+		<p>Sunday: Closed</p>
+	</div>
 </div>
 
 </body>
