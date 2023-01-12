@@ -6,12 +6,20 @@
 	<meta name="description" content="HinyApp is a psychosocial mobile and web-based application suited for everyone who wants to assess their psychological needs, maintain a good well-being, and attain their psychiatric needs easily.">
 	<title>Hinyapp</title>
 	<link rel="icon" type="img/png" href="img/dolphin-logo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Glory">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua">
 	<style>
 		
 		body {
 			margin: 0;
+			font-family: 'Glory', sans-serif;
+		}
+
+		h1, h2 {
+			font-family: 'Jua', sans-serif;
 		}
 		
+
 		ul.header {
 			list-style-type: none;
 			margin: 0;
@@ -241,7 +249,7 @@
 			width: 163px;
 			height: 349px;
 			padding: 10px;
-			background-color: #9d8dff;
+			background-color: #a9e0ff;
 			border-radius: 25px;
 		}
 
@@ -305,7 +313,7 @@
 			width: 163px;
 			height: 349px;
 			padding: 10px;
-			background-color: #9d8dff;
+			background-color: #ffcd1e;
 			border-radius: 25px;
 		}
 
@@ -314,8 +322,75 @@
 			width: 100%;
 			position: relative;
 			top: -15vh;
-			background-color: #7b61ff;
+			background-color: #9D8DFF;
 			border-radius: 30px;
+		}
+
+		.hinykits-container {
+			background-color: #7B61FF;
+			position: relative;
+			top: 10vh;
+			left: 5vw;
+			width: 90vw;
+			height: 50vh;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+
+		.hinykits-container p, .hinykits-container h1, .fee, .learn {
+			color: white;
+		}
+
+		.hinykits-container h1 {
+			font-size: 3rem;
+			position: relative;
+			left: 5vw;
+			top: 2vw;
+			margin: 0;
+			padding: 0;
+		}
+
+		.hinykits-container p {
+			font-size: 1.5rem;
+			width: 45vw;
+			position: relative;
+			left: 5vw;
+		}
+
+		.hinykits-container h3 {
+			font-size: 2rem;
+			position: relative;
+			left: 60vw;
+			top: -30.5vh;
+		}
+
+		.hinykits-container h2 {
+			font-size: 3rem;
+			text-align: center;
+			position: relative;
+			width: 20vw;
+			left: 60vw;		
+			top: -30.5vh;
+			background-color: #ffcd1e;
+			border-radius: 15px;
+		}
+
+		.aboutus {
+			height: 70vh;
+			width: 100%;
+			background-color: white;
+			color: black;
+		}
+
+		.aboutus-container {
+			width: 40vw;
+			margin: auto;
+			position: relative;
+			top: -32.5;
+		}
+
+		.aboutus-container h1 {
+			font-size: 3rem;
 		}
 
 	</style>
@@ -387,16 +462,16 @@
 
 <div class="hinykits">
 	<div class="hinykits-container">
-		<p id="hinyhelpkits">Hiny Help Kits</p>
+		<h1 id="hinyhelpkits">Hiny Help Kits</h1>
 		<p>HinyKits is a package of features for HinyApp that provides more insights and feedback on your psychosocial health, resources for additional support, and recommendations, e-books and audiobooks to help you cope and improve your overall health, comprehensive meditation sessions and lifestyle plans to relax and relieve stress, and much more!</p>
-		<p>Fee starts at ₱129.00</p>
-		<p>Learn More</p>
+		<h3 class="fee"><i>Fee starts at <b>₱129.00</b></i></h3>
+		<h2 class="learn">Learn More</h2>
 	</div>
 </div>
 
 <div class="aboutus">
 	<div class="aboutus-container">
-		<p id="aboutus">About Us</p>
+		<h1 id="aboutus">About Us</h1>
 		<p>Our team of physiotherapists is made up of highly trained professionals who have experience in many different clinical settings including, orthopaedic, acute care, neurology, sports medicine, and more. Our team of physiotherapists are trained to assess, treat and recover from a wide variety of injuries and conditions. We are a highly trained team, and your healthcare needs will be taken care of with the latest research in the field.</p>
 		<p>Address: Marinduque, Philippines</p>
 		<p>Phone: +63 0999999999</p>
